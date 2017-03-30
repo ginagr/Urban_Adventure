@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/list_item_location_visited_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"
+        android:clickable="false"
+        android:backgroundTint="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/list_item_location_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/list_item_location_visited_check_box"
+        android:textStyle="bold"
+        tools:text="Location Title"
+        android:padding="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_item_location_title_text_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/list_item_location_type_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Location Type"
+            android:padding="4dp"
+            android:layout_below="@+id/list_item_location_title_text_view" />
+
+        <TextView
+            android:id="@+id/list_item_location_type_distance_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="- 0.0 mi"
+            android:padding="4dp"
+            android:layout_below="@+id/list_item_location_title_text_view"
+            android:layout_weight="0.96" />
+    </LinearLayout>
+
+</RelativeLayout>

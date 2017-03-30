@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UrbanAdventure</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyBH1X_sP93ANPcDj611FQo1idCQ9wyrjBM</string>
+    <string name="action_settings">Settings</string>
+    <string name="num_locations">%1$s locations to go</string>
+    <string name="category">Category:</string>
+    <string name="areaLocation">Location:</string>
+    <string name="description">Description:</string>
+    <string name="map">Map</string>
+    <string name="visited">Visited?</string>
+</resources>
